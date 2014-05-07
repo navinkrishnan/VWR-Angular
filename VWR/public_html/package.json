@@ -1,0 +1,20 @@
+{
+    "main": "index.html",
+    "name": "VWR App",
+    "description": "An Angular app",
+    "version": "1.0",
+    "nodejs": true,
+    "window": {
+        "title": "VWR",
+        "icon": "favicon.ico",
+        "toolbar": true,
+        "frame": true,
+        "width": 1200,
+        "height": 768,
+        "resizable": true
+    },
+    "webkit": {
+        "plugin": true
+    },
+    "chromium-args": "--disable-web-security --experimental-location-features --enable-geolocation --allow-file-access-from-files --allow-file-access --enable-device-policy"
+}
