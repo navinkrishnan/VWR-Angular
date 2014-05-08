@@ -6,8 +6,15 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body ng-app="presidentApp">
-        <div>TODO write content</div>
-           <a href="#/home"></a>
+        <div ng-controller="indexCtrl">
+            <div ng-show="{{isLoading}}">
+                <img src="images/loader.gif" alt="loading"/>
+
+            </div>
+            <div ng-hide="{{isLoading}}">
+                <a href="#/home">HOME</a>
+            </div>
+        </div>
         <div ng-view></div>
         <script src="js/libs/angular.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -15,6 +22,7 @@
         <script src="http://include.jaydata.org/jaydata.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
-    
+        <script src="js/service.js"></script>
+
     </body>
 </html>
