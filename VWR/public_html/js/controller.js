@@ -15,7 +15,7 @@ presidentApp.controller('homeCtrl', function($scope, $http, getService) {
             $scope.users = response;
             FulUsers = response;
         });
-        $('.carousel').carousel({carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'});
+        //$('.carousel').carousel({carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'});
     });
 
 //    $scope.changeLoc = function() {
@@ -27,7 +27,7 @@ presidentApp.controller('homeCtrl', function($scope, $http, getService) {
 //            }
 //        });
 //        $scope.users = sortedUsers;
-//        $('.carousel').carousel({carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'});
+//
 //
 //    };
 
