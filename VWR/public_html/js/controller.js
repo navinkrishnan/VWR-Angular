@@ -1,5 +1,7 @@
 // var presidentAppCtrl = angular.module('presidentApp',[]);
 presidentApp.controller('homeCtrl', function($scope, $http, getService) {
+    var FulUsers = [];
+    $scope.curLoc = "10";
 
     getService.getDatafromDb(function(loc) {
         $scope.$apply(function() {
@@ -7,15 +9,37 @@ presidentApp.controller('homeCtrl', function($scope, $http, getService) {
         });
     });
 
-});
+    getService.getUserdatafromDb(function(response) {
 
-
-presidentApp.controller('indexCtrl', function($scope, getService) {
-
-    $scope.isLoading = true;
-    getService.getAjax(function(data) {
-        alert("finish");
-        $scope.isLoading = false;
+        $scope.$apply(function() {
+            $scope.users = response;
+            FulUsers = response;
+        });
+        $('.carousel').carousel({carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'});
     });
 
+//    $scope.changeLoc = function() {
+//
+//        var sortedUsers = [];
+//        angular.forEach(FulUsers, function(user, i) {
+//            if (user.loc == $scope.curLoc) {
+//                sortedUsers.push(user);
+//            }
+//        });
+//        $scope.users = sortedUsers;
+//        $('.carousel').carousel({carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'});
+//
+//    };
+
 });
+
+
+presidentApp.controller('indexCtrl', ['$scope', 'getService', function($scope, getService) {
+
+        $scope.isLoading = true;
+        getService.getAjax(function(res) {
+            $scope.isLoading = false;
+            alert("finish");
+            alert($scope.isLoading);
+        });
+    }]);

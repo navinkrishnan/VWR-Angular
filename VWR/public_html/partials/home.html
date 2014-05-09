@@ -1,8 +1,23 @@
 <div>
 
-    <select id="location">
+    <select id="location" ng-model="curLoc" ng-change="changeLoc()">
+        <option value="0">Select</option>
         <option ng-repeat="loc in location" value="{{loc.validationCode}}">{{loc.validationDesc}}</option>
 
     </select>
+    {{curLoc}}
+
+    <div class="carousel">
+        carousel
+        <div class="slides">
+            <div ng-repeat="user in users| property:'loc':curLoc">
+                <a href="#">
+                    <img src="{{user.pic}}" alt ="pic"/>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
 
 </div>
