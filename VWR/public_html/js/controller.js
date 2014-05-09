@@ -33,6 +33,11 @@ presidentApp.controller('homeCtrl', function($scope, $http, getService) {
 
 });
 
+presidentApp.controller('videoCtrl', function($scope) {
+    $scope.videoSrcType1 = 'http://video-js.zencoder.com/oceans-clip.mp4';
+    $scope.videoSrcType2 = 'http://video-js.zencoder.com/oceans-clip.webm';
+    $scope.videoSrcType3 = 'http://video-js.zencoder.com/oceans-clip.ogv';
+});
 
 presidentApp.controller('indexCtrl', ['$scope', 'getService', function($scope, getService) {
 
