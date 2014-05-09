@@ -6,15 +6,16 @@
         <meta name="viewport" content="width=device-width">
         <link href="css/video-js.css" rel="stylesheet" type="text/css">
         <link rel="Stylesheet" type="text/css" href="css/carousel.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.flipster.css"/>
 
     </head>
     <body ng-app="presidentApp">
         <div ng-controller="indexCtrl">
-            <div ng-show="{{isLoading}}">
+            <div ng-show="isLoading">
                 <img src="images/loader.gif" alt="loading"/>
 
             </div>
-            <div ng-hide="{{isLoading}}">
+            <div ng-hide="isLoading">
                 <a href="#/home">HOME</a>
             </div>
         </div>
@@ -26,15 +27,17 @@
         <!-- VIDEO PLAYER -->
         <script src="js/libs/video.js"></script>
         <script>
-            videojs.options.flash.swf = "video/video-js.swf";
+                videojs.options.flash.swf = "video/video-js.swf";
         </script>
         <!-- END VIDEO PLAYER -->
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
         <script src="js/service.js"></script>
-        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+
         <script type="text/javascript" src="js/libs/jquery.carousel-1.1.min.js"></script>
         <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.flipster.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
 
     </body>
 </html>

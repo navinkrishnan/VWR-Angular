@@ -7,17 +7,21 @@
     </select>
     {{curLoc}}
 
-    <div class="carousel">
-        carousel
-        <div class="slides">
-            <div ng-repeat="user in users| property:'loc':curLoc">
-                <a href="#">
-                    <img src="{{user.pic}}" alt ="pic"/>
-                </a>
-
+    <!--    <div class="carousel">
+            carousel
+            <div class="slides">
+                <div ng-repeat="user in users">
+                    <a href="#">
+                        <img src="{{user.pic}}" alt ="pic"/>
+                    </a>
+    
+                </div>
             </div>
+        </div>-->
+    <div id="container">
+        <div class="flipster">
+
         </div>
     </div>
-
 
 </div>

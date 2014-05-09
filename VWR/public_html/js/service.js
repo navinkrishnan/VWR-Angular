@@ -31,7 +31,7 @@ presidentApp.service('getService', function($http) {
                         LocData.save(loc);
 
                     });
-
+                    callBack("DONE");
 
                 });
 
@@ -43,7 +43,7 @@ presidentApp.service('getService', function($http) {
                         Userdata.save(user);
 
                     });
-                    return "done";
+
                 });
 
     };
