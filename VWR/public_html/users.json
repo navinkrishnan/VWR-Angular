@@ -2,33 +2,45 @@
     "users": [
         {
             "name": "one",
-            "pic": "picPath",
+            "pic": "images/slide-1.jpg",
             "desc": "some desc",
-            "loc" : "loc" 
+            "loc": "10"
         },
         {
             "name": "two",
-            "pic": "picPath",
+            "pic": "images/slide-2.jpg",
             "desc": "some desc",
-            "loc" : "loc" 
+            "loc": "10"
         },
         {
             "name": "three",
-            "pic": "picPath",
+            "pic": "images/slide-3.jpg",
             "desc": "some desc",
-            "loc" : "loc" 
+            "loc": "10"
         },
         {
             "name": "four",
-            "pic": "picPath",
+            "pic": "images/slide-4.jpg",
             "desc": "some desc",
-            "loc" : "loc" 
+            "loc": "10"
         },
         {
             "name": "five",
-            "pic": "picPath",
+            "pic": "images/slide-5.jpg",
             "desc": "some desc",
-            "loc" : "loc" 
+            "loc": "11"
+        },
+        {
+            "name": "six",
+            "pic": "images/slide-6.jpg",
+            "desc": "some desc",
+            "loc": "11"
+        },
+        {
+            "name": "seven",
+            "pic": "images/slide-7.jpg",
+            "desc": "some desc",
+            "loc": "11"
         }
     ]
 }
