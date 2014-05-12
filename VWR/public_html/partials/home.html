@@ -6,6 +6,10 @@
 
     </select>
     {{curLoc}}
+    <div style="float:right">
+        <input type="text" ng-model="curUser" ng-change="selUser()" typeahead="suggestion.name for suggestion in cities($viewValue)"/>
+        <br/>
+    </div>
 
     <!--    <div class="carousel">
             carousel

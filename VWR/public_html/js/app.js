@@ -1,12 +1,12 @@
-var presidentApp = angular.module('presidentApp', []);
+var presidentApp = angular.module('presidentApp', ['ui.bootstrap']);
 
 presidentApp.config(['$routeProvider', function($routeProvider) {
 
         $routeProvider.when('/home', {
-                	templateUrl: 'partials/home.html', 
-                	controller: 'homeCtrl'
-         }).when('/video', {
-            templateUrl:'partials/video.html',
+            templateUrl: 'partials/home.html',
+            controller: 'homeCtrl'
+        }).when('/video', {
+            templateUrl: 'partials/video.html',
             controller: 'videoCtrl'
         });
     }]);
