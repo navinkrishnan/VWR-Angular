@@ -22,7 +22,7 @@ presidentApp.service('getService', function($http) {
 
     this.getAjax = function(callBack) {
 
-        $http({method: 'GET', url: 'http://lifecycle-dev.elasticbeanstalk.com/resource/validation/?validationField=location', type: 'json'}).
+        $http({method: 'GET', url: 'http://someWebsite.com', type: 'json'}).
                 then(function(data, status, headers, config) {
                     console.log(data);
                     LocData.removeAll();
